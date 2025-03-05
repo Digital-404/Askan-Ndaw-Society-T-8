@@ -48,7 +48,7 @@ html {
 }
 
 .the_info-2 {
-  right: 5%;
+  left: 2%;
 }
 
 .the_info_active ion-icon {
@@ -97,6 +97,10 @@ html {
 .the_description .map_container ion-icon,
 .the_description-video .map_container ion-icon {
   font-size: 1.2em;
+}
+
+.the_description-video {
+  left: 2%;
 }
 
 .hover_loader_container {
@@ -229,6 +233,7 @@ html {
   background-repeat: no-repeat;
   background-size: 100%;
   -webkit-user-select: none;
+  display: none;
 }
 .link_to_archviz:hover {
   transform: scale(1.1);
