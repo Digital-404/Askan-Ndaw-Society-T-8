@@ -38,14 +38,20 @@
   <body>
     <div class="the_description">
       <p>
-        Dimention:.../... <br />
-        Localisation:...<br />
-        Region:...
+        Lotissement Pointe Sarène SAPCO <br />
+        Informations : <br />
+        • Parcelle 300m2 cumulable<br />
+        • ⁠à partir de 500m de la mer <br />
+        • ⁠à 3min de l’hôtel Riu Baobab <br />
+        • ⁠15 min de Mbour <br />
+        - ⁠25 min de Saly <br />
+        - ⁠40 min de l’aéroport <br />
+        - ⁠1h15 de Dakar<br />
       </p>
 
       <div class="map_container">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5455.42053838333!2d-16.933987558810305!3d14.79352301408105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1bf95a21fe7ad%3A0xdf1f039fc3b95515!2sManufacture%20S%C3%A9n%C3%A9galaise%20Des%20Arts%20D%C3%A9coratifs%20MSAD!5e0!3m2!1sfr!2ssn!4v1731848071289!5m2!1sfr!2ssn"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.8349795105064!2d-17.455022717355774!3d14.710772542027865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1129712efe6d1%3A0x4409fd65cdfb9760!2sSAPCO%20SENEGAL%20SA!5e1!3m2!1sfr!2ssn!4v1741175936843!5m2!1sfr!2ssn"
           width="100%"
           height="100%"
           allowfullscreen=""
@@ -55,8 +61,22 @@
       </div>
     </div>
 
+    <div class="the_description-video">
+      <p>Vue Aerienne</p>
+
+      <video width="100%" controls>
+        <source src="./Style/Images/Video-1.mp4" type="video/mp4" />
+        <source src="./Style/Images/Video-1.mp4" type="video/ogg" />
+      </video>
+    </div>
+
     <div class="the_info">
       <ion-icon name="alert-outline"></ion-icon>
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="the_info-2">
+      <ion-icon name="film-outline"></ion-icon>
       <ion-icon name="close-outline"></ion-icon>
     </div>
 
@@ -70,6 +90,7 @@
         </div>
       </div>
     </div>
+
     <a
       class="link_to_archviz"
       href="https://archviz-dakar.com/"
@@ -1104,13 +1125,33 @@
       let img_1 = document.querySelector("#Scene-0");
 
       let theInfo = document.querySelector(".the_info");
+      let theInfo_2 = document.querySelector(".the_info-2");
       let theDescription = document.querySelector(".the_description");
+      let theVideoDescription = document.querySelector(
+        ".the_description-video"
+      );
 
       theInfo.addEventListener("click", () => {
         if (theInfo.classList.length === 1) {
           theInfo.classList.add("the_info_active");
           theDescription.style.bottom = "8%";
+
+          theVideoDescription.style.bottom = "";
+          theInfo_2.classList.remove("the_info_active");
         } else {
+          theDescription.style.bottom = "";
+          theInfo.classList.remove("the_info_active");
+        }
+      });
+
+      theInfo_2.addEventListener("click", () => {
+        if (theInfo_2.classList.length === 1) {
+          theInfo_2.classList.add("the_info_active");
+          theVideoDescription.style.bottom = "8%";
+        } else {
+          theVideoDescription.style.bottom = "";
+          theInfo_2.classList.remove("the_info_active");
+
           theDescription.style.bottom = "";
           theInfo.classList.remove("the_info_active");
         }
