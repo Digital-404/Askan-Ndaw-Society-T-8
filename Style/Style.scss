@@ -89,13 +89,7 @@ html {
     width: 100%;
     // background-color: #222;
   }
-  .test {
-    background-color: red;
-    width: 1em;
-    height: 1em;
-    font-size: 2em;
-    color: #000;
-  }
+
   .map_container {
     @include cent();
     width: 100%;
