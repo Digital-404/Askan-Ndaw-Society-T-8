@@ -64,6 +64,9 @@
     <div class="The_Image_Back_Cover"></div>
 
     <div class="the_blach_hover"></div>
+    <a onclick="history.back()" class="the-logo">
+      <img src="./Style/Images/PNG/Logo_Akan-Ndaw.png" width="100%" alt="" />
+    </a>
     <a-scene
       id="the_scene"
       the_scene
@@ -109,8 +112,7 @@
         animation__fadeback="property: components.material.material.color; type: color; from: #000; to: #FFF; dur: 300; startEvents: animationcomplete__fade"
       >
       </a-sky>
-
-      <!-- #######################################jjj##################### -->
+      <!-- ############################################################ -->
       <!-- ############################################################ -->
       <!-- ############################################################ -->
       <!-- ############################################################ -->
@@ -226,7 +228,6 @@
 
         <!-------------->
       </a-entity>
-
       <!-- Group-1. -->
       <a-entity scale="0 90 0" class="groups" id="Group-1" visible="false">
         <a-plane
@@ -252,7 +253,6 @@
         >
         </a-plane>
         <!-------------->
-
         <a-box
           scale="0.20778 1.2573 0.23177"
           position="-4.94345 0.14154 3.40641"
@@ -286,7 +286,6 @@
           geometry=""
         ></a-box>
         <!-------------->
-
         <a-plane
           color="yellow"
           opacity=".2"
@@ -331,7 +330,6 @@
           geometry=""
           scale="0.26966 12.51629 1"
         ></a-plane>
-
         <!-------------->
       </a-entity>
       <!-- Group-2. -->
@@ -1525,9 +1523,12 @@
     </div>
 
     <div class="the_info">
-      <img src="./Style/Images/PNG/alert.svg" />
+      <img src="./Style/Images/PNG/information.svg" />
       <img src="./Style/Images/PNG/close.svg" />
     </div>
+    <a href="https://askan-ndaw.vercel.app/contact" class="the_mail">
+      <img src="./Style/Images/PNG/mail.svg" />
+    </a>
 
     <div class="the_info-2">
       <img src="./Style/Images/PNG/film.svg" />
@@ -1588,7 +1589,7 @@
         the_group_to_activate.setAttribute("scale", "1 1 1");
         the_sky.setAttribute("rotation", `0 ${theRotation} 0`);
       };
-      setStrat(0, -90);
+      setStrat(0, 0);
 
       AFRAME.registerComponent("the_dote", {
         schema: {

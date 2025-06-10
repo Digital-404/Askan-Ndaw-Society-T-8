@@ -11,6 +11,40 @@ html {
   height: 100%;
 }
 
+.the-logo {
+  width: 7em;
+  height: auto;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  z-index: 5;
+}
+.the-logo:hover {
+  transform: scale(1.1);
+}
+
+.the_mail {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  bottom: 2%;
+  right: 5.5%;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  border: 0.5em solid #f1f1f1;
+}
+.the_mail:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
 .the_info,
 .the_info-2 {
   position: absolute;
@@ -28,6 +62,7 @@ html {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   border: 0.5em solid #f1f1f1;
+  color: #663824;
 }
 .the_info img,
 .the_info-2 img {
@@ -66,9 +101,9 @@ html {
   z-index: 16;
   width: 20em;
   height: auto;
-  background-color: rgba(241, 241, 241, 0.7);
+  background-color: #f1f1f1;
   padding: 1em;
-  color: #000;
+  color: #663824;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,6 +283,13 @@ html {
   }
   .The_Image img {
     transform: translate(0%, 0.5%);
+  }
+  .the_mail {
+    right: 20%;
+  }
+  .the_mail:hover {
+    transform: scale(1.1);
+    cursor: pointer;
   }
   .the_info-2 {
     right: 20%;
